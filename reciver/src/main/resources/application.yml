@@ -1,0 +1,23 @@
+server:
+  port: 9999
+
+spring:
+  activemq:
+    broker-url: tcp://127.0.0.1:61616
+    user: admin
+    password: admin
+
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://127.0.0.1:3306/mqtest
+    username: root
+    password: root
+
+queue: kyriemq
+
+
+
+
+mybatis:
+  mapper-locations: classpath:mapper/.*xnl
+  type-aliases-package: com.kyrie.recive.entity
